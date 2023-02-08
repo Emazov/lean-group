@@ -2,14 +2,14 @@
 	--main-text: #2c2d2e;
 	--secondary-text: #919399;
 	--prime-color: #ef7c00;
-	--secondary-link: #EFB578;
+	--secondary-link: #efb578;
 }
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	color: var(--main-text);
 }
 
@@ -28,9 +28,15 @@ a {
 }
 
 .title {
+	margin-bottom: 32px;
 	font-weight: 600;
 	font-size: 32px;
 	line-height: 40px;
+	text-align: center;
+}
+
+.title-span {
+	color: var(--prime-color);
 }
 
 .header {
@@ -88,7 +94,7 @@ a {
 .dropdown__wrap {
 	width: 244px;
 	padding: 16px 20px 0 24px;
-	background: #FFFFFF;
+	background: #ffffff;
 	border: 1px solid rgba(0, 16, 61, 0.12);
 	border-radius: 0px 0px 4px 4px;
 }
@@ -166,6 +172,7 @@ main {
 
 .home__title {
 	margin: 16px 0 17px;
+	text-align-last: left;
 }
 
 .home__text {
@@ -189,7 +196,7 @@ main {
 
 .home__button:hover {
 	background-color: var(--secondary-link);
-	transition: .3s;
+	transition: 0.3s;
 }
 
 .home__links {
@@ -211,38 +218,33 @@ main {
 	margin: 30px 0;
 }
 
-
 .home .owl-dots {
 	position: absolute;
 	left: 116px;
 	bottom: 40px;
 }
 
-.home .owl-theme .owl-dots .owl-dot span {
+.home .owl-theme .owl-dots .owl-dot span,
+.certificates .owl-theme .owl-dots .owl-dot span {
 	background-color: inherit;
 	border: 1px solid var(--prime-color);
 }
 
-.home .owl-theme .owl-dots .owl-dot span:hover {
+.home .owl-theme .owl-dots .owl-dot span:hover,
+.certificates .owl-theme .owl-dots .owl-dot span:hover {
 	background-color: var(--prime-color);
 }
 
-.home .owl-theme .owl-dots .owl-dot.active span {
+.home .owl-theme .owl-dots .owl-dot.active span,
+.certificates .owl-theme .owl-dots .owl-dot.active span {
 	background-color: var(--prime-color);
 }
-
 
 .about {
 	margin: 40px 0 100px;
 }
 
-.about__title {
-	margin-bottom: 32px;
-	text-align: center;
-}
-
 .about__title span {
-	color: var(--prime-color);
 	text-transform: uppercase;
 }
 
@@ -293,3 +295,42 @@ main {
 .about__description:nth-child(2) {
 	margin: 20px 0;
 }
+
+.certificates {
+	margin-bottom: 75px;
+}
+
+.certificates .owl-theme .owl-nav {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: 0;
+	width: 100%;
+}
+
+.certificates .certificates-custom-prev,
+.certificates .certificates-custom-next {
+	position: absolute;
+	transform: translateY(-50%);
+	height: 50px;
+	width: 27px;
+	cursor: pointer;
+}
+
+.certificates-custom-prev {
+	left: -64px;
+	background-image: url('../img/certificates/prev-icon.png');
+}
+
+.certificates-custom-next {
+	right: -64px;
+	background-image: url('../img/certificates/next-icon.png');
+}
+
+.certificates .owl-dots {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
