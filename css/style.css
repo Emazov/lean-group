@@ -27,6 +27,12 @@ a {
 	margin: 0 auto;
 }
 
+.title {
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 40px;
+}
+
 .header {
 	position: absolute;
 	top: 0;
@@ -160,9 +166,6 @@ main {
 
 .home__title {
 	margin: 16px 0 17px;
-	font-weight: 600;
-	font-size: 32px;
-	line-height: 40px;
 }
 
 .home__text {
@@ -189,7 +192,7 @@ main {
 	transition: .3s;
 }
 
-/* .home__links {
+.home__links {
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -200,22 +203,6 @@ main {
 	flex-direction: column;
 	align-items: center;
 	backdrop-filter: blur(5px);
-	border-radius: 20px;
-	z-index: 10;
-} */
-
-.home__links {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 100%;
-	padding: 0 3px;
-	margin-right: 60px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	backdrop-filter: blur(3px);
 	border-radius: 20px;
 	z-index: 10;
 }
@@ -236,7 +223,7 @@ main {
 	border: 1px solid var(--prime-color);
 }
 
-.home .owl-theme .owl-dots .owl-dot span:hover{
+.home .owl-theme .owl-dots .owl-dot span:hover {
 	background-color: var(--prime-color);
 }
 
@@ -244,3 +231,65 @@ main {
 	background-color: var(--prime-color);
 }
 
+
+.about {
+	margin: 40px 0 100px;
+}
+
+.about__title {
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+.about__title span {
+	color: var(--prime-color);
+	text-transform: uppercase;
+}
+
+.about__content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about__col-6 {
+	width: 552px;
+}
+
+.about__video {
+	position: relative;
+	display: inline-block;
+}
+
+.about__video span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	height: 74px;
+	width: 74px;
+	border-radius: 50%;
+	background-color: var(--prime-color);
+}
+
+.about__video span::before {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 54%;
+	transform: translate(-50%, -54%);
+	border-top: 12px solid transparent;
+	border-left: 23px solid #fff;
+	border-bottom: 12px solid transparent;
+}
+
+.about__description {
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.about__description:nth-child(2) {
+	margin: 20px 0;
+}
