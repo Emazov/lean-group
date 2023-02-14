@@ -53,4 +53,13 @@ $(document).ready(function () {
 	$('.products-custom-next').click(function () {
 		productsSlider.trigger('next.owl.carousel');
 	});
+
+	// ----------	TEAM SECTION
+	var teamSlider = $('.team-slider');
+	teamSlider.owlCarousel({
+		items: 5,
+		loop: true,
+		dots: false,
+		margin: 28,
+	});
 });

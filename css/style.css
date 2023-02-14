@@ -479,7 +479,7 @@ main {
 	align-items: center;
 }
 
-.feedback__form-label img{
+.feedback__form-label img {
 	padding: 10px;
 	border: 1px solid rgba(0, 16, 61, 0.12);
 }
@@ -525,4 +525,46 @@ main {
 	font-size: 15px;
 	line-height: 20px;
 	color: var(--secondary-text);
+}
+
+.team {
+	text-align: center;
+}
+
+.team__card-img img {
+	height: 203px;
+	width: 203px;
+	border-radius: 50%;
+}
+
+.team__card-title {
+	margin: 12px 0 4px;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.team__card-description {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 13px;
+	color: var(--secondary-text);
+}
+
+.team__card-number {
+	margin: 16px 0 8px;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	text-align: center;
+}
+
+.team__card-mail {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 13px;
+}
+
+.team__btn {
+	margin: 52px 0 80px;
 }
